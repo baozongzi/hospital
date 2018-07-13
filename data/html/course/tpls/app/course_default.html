@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>模拟考试系统</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="app/core/styles/css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="app/core/styles/css/datetimepicker.css" />
+	<link rel="stylesheet" type="text/css" href="app/core/styles/css/jquery-ui.min.css" />
+	<link rel="stylesheet" type="text/css" href="app/core/styles/css/peskin.css" />
+	<!--[if lt IE 9]>
+	<script src="app/core/styles/js/html5shiv.min.js"></script>
+	<script src="app/core/styles/js/respond.min.js"></script>
+	<![endif]-->
+	<script src="app/core/styles/js/jquery.min.js"></script>
+	<script src="app/core/styles/js/jquery-ui.min.js"></script>
+	<script src="app/core/styles/js/bootstrap.min.js"></script>
+	<script src="app/core/styles/js/bootstrap-datetimepicker.js"></script>
+
+	<script src="app/core/styles/js/all.fine-uploader.min.js"></script>
+
+	<script src="app/core/styles/js/ckeditor/ckeditor.js"></script>
+	<script src="app/core/styles/js/plugin.js"></script>
+</head>
+<!-- <script type="text/javascript" src="app/core/styles/js/jquery.media.js"></script>   -->
+<!-- <link href="https://cdn.bootcss.com/viewer.js/0.11.1/crocodoc.viewer.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/viewer.js/0.11.1/crocodoc.viewer.js"></script>
+<link href="https://cdn.bootcss.com/viewer.js/0.11.1/crocodoc.viewer.min.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/viewer.js/0.11.1/crocodoc.viewer.min.js"></script>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> -->
+<style>
+/*.nums{margin-left: 2px;}*/
+video::-internal-media-controls-download-button {
+    display:none;
+}
+
+video::-webkit-media-controls-enclosure {
+    overflow:hidden;
+}
+
+video::-webkit-media-controls-panel {
+    width: calc(100% + 30px); 
+}
+
+#buttons{display: none;}
+</style>
+<body>
+<div class="container-fluid box" style="margin:0px auto;padding-top:10px;overflow:visible">
+	<div class="row-fluid">
+		<div class="main">
+			<div class="col-xs-3">
+				<h1 style="font-size:42px;color:#337AB7;"><img src="app/core/styles/img/logo2.png" style="height:60px;margin-top:-10px;"/>&nbsp;<b></b></h1>
+			</div>
+			<div class="col-xs-1">
+			</div>
+			<div class="col-xs-6" style="padding-top:22px;">
+				<div class="form-inline">
+					<div class="form-group">
+						<input type="text" style="width:380px;" class="form-control" id="keyword" placeholder="搜索课程/资料">
+					</div>
+					<button type="button" class="btn btn-info" onclick="javascript:window.location='index.php?content-app-search&keyword='+$('#keyword').val();">搜资料</button>
+					<button type="button" class="btn btn-primary" onclick="javascript:window.location='index.php?course-app-search&keyword='+$('#keyword').val();">搜课程</button>
+				</div>
+			</div>
+			<div class="col-xs-2" style="padding-top:22px;">
+				<ul class="list-unstyled list-inline">
+										<li>
+						<div class="btn-group">
+							<button type="button" class="btn btn-info"><em class="glyphicon glyphicon-user"></em> peadmin</button>
+							<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span class="caret"></span>
+								<span class="sr-only">Toggle Dropdown</span>
+							</button>
+							<ul class="dropdown-menu">
+								<li><a href="index.php?user-center"><em class="glyphicon glyphicon-user"></em> 用户中心</a></li>
+																<li><a href="index.php?core-master"><em class="glyphicon glyphicon-dashboard"></em> 后台管理</a></li>								<li><a class="ajax" href="index.php?user-app-logout"><em class="glyphicon glyphicon-log-out"></em> 退出</a></li>
+							</ul>
+						</div>
+					</li>
+									</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid navbar" style="margin-top:0px;margin-bottom:0px;padding-top:10px;background-color:#337AB7;">
+	<div class="row-fluid">
+		<div class="main">
+			<div class="col-xs-12">
+				<ul class="list-unstyled list-inline">
+					<li class="menu col-xs-1"><a href="index.php" class="icon">首页</a></li>
+					<li class="menu col-xs-1 active"><a href="index.php?course">课程</a></li>
+					<li class="menu col-xs-1"><a href="index.php?exam">考试</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="main">
+			<div class="box itembox" style="margin-bottom:0px;">
+				<div class="col-xs-12">
+					<ol class="breadcrumb">
+						<li><a href="index.php">首页</a></li>
+						<li><a href="index.php?course">课程</a></li>
+												<li class="active">重点实验室管理规定</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+		<div class="main" id="datacontent">
+			<div class="col-xs-7" style="padding-left:0px;position:relative;">
+				<div class="box itembox" style="height:620px;width:680px;top:0px;" data-spy="affix" data-offset-top="245">
+				
+									<div class="media" style="background-color: rgb(255, 255, 255); width: 100%;height: 620px;">
+						<iframe  id="iframeChild" isContentEditable ="true" style="height:100%;width:100%;top:0px;" src="files/attach/images/content/20180604/15280937566809.docx"></iframe>
+					</div>
+				
+								</div>
+			</div>
+			<div class="col-xs-5 pull-right" style="padding-right:0px;">
+				<div class="box itembox" style="padding-top:20px;">
+					<h4 class="title">测试1</h4>
+					<p>&nbsp; &nbsp; &nbsp; &nbsp;简介回车<br />
+&nbsp; &nbsp; &nbsp; &nbsp;这里是简介 仔细看&nbsp; &nbsp;看有<br />
+空格。<br />
+111<br />
+<br />
+&nbsp;&nbsp; &nbsp; &nbsp;简介回车<br />
+&nbsp; &nbsp; &nbsp; &nbsp;这里是简介 仔细看&nbsp; &nbsp;看有<br />
+空格。<br />
+111</p>				</div>
+								<div class="box itembox" style="padding-top:20px;">
+					<div class="col-xs-6">
+						<a target="datacontent" href="index.php?course-app-course&page=&csid=13&contentid=27" class="thumbnail pull-left ajax">
+							<img src="app/core/styles/images/noimage.gif" alt="" width="100%">
+						</a>
+					</div>
+					<div class="col-xs-6">
+					<!-- 18 -->
+						<a target="datacontent" href="index.php?course-app-course&page=&csid=13&contentid=27" class="ajax"><h4 class="title">测试课件word</h4></a>
+						<p><p>测试课件word简介</p></p>
+						<p>
+							<span class="pull-right">
+																																	<a href="/files/attach/images/content/20180604/15280937566809.docx" download="测试课件word">下载</a>
+																								
+								<a href="javascript:;" class="clicks_27 iss" ids="27" type="1" >点赞: <span class="nums">0</span></a>
+								<a href="javascript:;" style="display: none;" class="clicks_27 nos" ids="27" type="0" >取消<span class="nums">0</span></a>
+
+								<script>
+									$(function(){ 
+								        $(".clicks_27").click(function(){ 
+								        	var id = $(this).attr('ids');
+								        	var type = $(this).attr('type');
+								            $.ajax({
+								                url:"index.php?course-app-course-click",
+								                type:'post',
+								                // data:{'name名':val值}
+								                data:{'id':id,'type':type},
+								                dataType:'json',
+								                success:function(data){
+								                  if(data){
+								                    alert(data.message);
+								                    if(data.statusCode == '200'){
+								                    	if(data.type == '1'){
+										                    $(".iss").hide();
+										                    $(".nos").show();
+										                }else{
+										                	$(".nos").hide();
+										                    $(".iss").show();
+										                }
+								                    	$(".nums").text(data.click);
+								                    }
+								                    
+								                  }else{
+								                    alert('数据提交失败');
+								                  }
+								                }
+								            })
+								        }); 
+								    }); 
+								</script>
+								
+
+							</span>
+						</p>
+					</div>
+				</div>
+								<div class="box itembox" style="padding-top:20px;">
+					<div class="col-xs-6">
+						<a target="datacontent" href="index.php?course-app-course&page=&csid=13&contentid=24" class="thumbnail pull-left ajax">
+							<img src="files/attach/images/content/20180601/15278175745976.png" alt="" width="100%">
+						</a>
+					</div>
+					<div class="col-xs-6">
+					<!-- 21 -->
+						<a target="datacontent" href="index.php?course-app-course&page=&csid=13&contentid=24" class="ajax"><h4 class="title">测试课件图片1</h4></a>
+						<p><p>&nbsp; &nbsp; &nbsp;课件图片简介</p>
+
+<p>&nbsp;</p>
+
+<p>回车</p></p>
+						<p>
+							<span class="pull-right">
+								
+
+							</span>
+						</p>
+					</div>
+				</div>
+								<div class="box itembox" style="padding-top:20px;">
+					<div class="col-xs-6">
+						<a target="datacontent" href="index.php?course-app-course&page=&csid=13&contentid=25" class="thumbnail pull-left ajax">
+							<img src="app/core/styles/images/noimage.gif" alt="" width="100%">
+						</a>
+					</div>
+					<div class="col-xs-6">
+					<!-- 14 -->
+						<a target="datacontent" href="index.php?course-app-course&page=&csid=13&contentid=25" class="ajax"><h4 class="title">测试课件视频1</h4></a>
+						<p><p>课件视频简介</p></p>
+						<p>
+							<span class="pull-right">
+								
+
+							</span>
+						</p>
+					</div>
+				</div>
+								<div class="box itembox" style="padding-top:20px;">
+					<div class="col-xs-6">
+						<a target="datacontent" href="index.php?course-app-course&page=&csid=13&contentid=26" class="thumbnail pull-left ajax">
+							<img src="app/core/styles/images/noimage.gif" alt="" width="100%">
+						</a>
+					</div>
+					<div class="col-xs-6">
+					<!-- 18 -->
+						<a target="datacontent" href="index.php?course-app-course&page=&csid=13&contentid=26" class="ajax"><h4 class="title">测试课件pdf</h4></a>
+						<p><p>　　　　测试课件pdf简介</p></p>
+						<p>
+							<span class="pull-right">
+								
+
+							</span>
+						</p>
+					</div>
+				</div>
+								<div class="box itembox" style="padding-top:20px;">
+					<div class="col-xs-6">
+						<a target="datacontent" href="index.php?course-app-course&page=&csid=13&contentid=28" class="thumbnail pull-left ajax">
+							<img src="app/core/styles/images/noimage.gif" alt="" width="100%">
+						</a>
+					</div>
+					<div class="col-xs-6">
+					<!-- 18 -->
+						<a target="datacontent" href="index.php?course-app-course&page=&csid=13&contentid=28" class="ajax"><h4 class="title">测试课件ppt</h4></a>
+						<p><p>测试课件ppt简介</p></p>
+						<p>
+							<span class="pull-right">
+								
+
+							</span>
+						</p>
+					</div>
+				</div>
+								<div class="box itembox" style="padding-top:20px;">
+					<div class="col-xs-6">
+						<a target="datacontent" href="index.php?course-app-course&page=&csid=13&contentid=29" class="thumbnail pull-left ajax">
+							<img src="app/core/styles/images/noimage.gif" alt="" width="100%">
+						</a>
+					</div>
+					<div class="col-xs-6">
+					<!-- 18 -->
+						<a target="datacontent" href="index.php?course-app-course&page=&csid=13&contentid=29" class="ajax"><h4 class="title">测试课件txt</h4></a>
+						<p><p>测试课件txt简介</p></p>
+						<p>
+							<span class="pull-right">
+								
+
+							</span>
+						</p>
+					</div>
+				</div>
+								<div class="box itembox" style="padding-top:20px;">
+					<div class="col-xs-6">
+						<a target="datacontent" href="index.php?course-app-course&page=&csid=13&contentid=30" class="thumbnail pull-left ajax">
+							<img src="app/core/styles/images/noimage.gif" alt="" width="100%">
+						</a>
+					</div>
+					<div class="col-xs-6">
+					<!-- 18 -->
+						<a target="datacontent" href="index.php?course-app-course&page=&csid=13&contentid=30" class="ajax"><h4 class="title">测试课件excel</h4></a>
+						<p><p>测试课件excel简介</p></p>
+						<p>
+							<span class="pull-right">
+								
+
+							</span>
+						</p>
+					</div>
+				</div>
+								<ul class="pagination pagination-right"></ul>
+			</div>
+		</div>
+	</div>
+</div>
+<script language="javascript">
+window.onload=function(){
+document.getElementById('iframeChild').contentWindow.document.getElementById('buttons').style.display="none";
+}
+</script>
+
+<div class="container-fluid box" style="background-color:#337AB7;margin-bottom:0px;" id="footer">
+	<div class="row-fluid">
+		<div class="main itembox">
+			<div class="col-xs-12">
+				<ul class="list-unstyled">
+					<li class="text-center"><a href="/">在线模拟考试</a></li>
+					<li class="text-center"><a href="">Copyright © mcykj.com  2015-2016</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

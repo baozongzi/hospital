@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>模拟考试系统</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="app/core/styles/css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="app/core/styles/css/datetimepicker.css" />
+	<link rel="stylesheet" type="text/css" href="app/core/styles/css/jquery-ui.min.css" />
+	<link rel="stylesheet" type="text/css" href="app/core/styles/css/peskin.css" />
+	<!--[if lt IE 9]>
+	<script src="app/core/styles/js/html5shiv.min.js"></script>
+	<script src="app/core/styles/js/respond.min.js"></script>
+	<![endif]-->
+	<script src="app/core/styles/js/jquery.min.js"></script>
+	<script src="app/core/styles/js/jquery.json.js"></script>
+	<script src="app/core/styles/js/jquery-ui.min.js"></script>
+	<script src="app/core/styles/js/bootstrap.min.js"></script>
+	<script src="app/core/styles/js/bootstrap-datetimepicker.js"></script>
+	<script src="app/core/styles/js/all.fine-uploader.min.js"></script>
+	<script src="app/core/styles/js/ckeditor/ckeditor.js"></script>
+	<script src="app/core/styles/js/plugin.js"></script>
+	<script src="app/exam/styles/js/plugin.js"></script>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy">
+<div class="container-fluid" id="questioncontent">
+	<div class="row-fluid">
+		<div class="main box">
+			<div class="col-xs-3" id="questionbar">
+				<dl class="clear" style="width:270px;" data-spy="affix" data-offset-top="235" id="questionindex">
+					<dd>
+						<h2><a class="btn btn-danger col-xs-12" style="font-size:1.2em;"><span id="timer_h">00</span>：<span id="timer_m">00</span>：<span id="timer_s">00</span></a></h2>
+					</dd>
+					<dt class="float_l"><h4>&nbsp;</h4></dt>
+					<ul class="nav nav-tabs" role="tablist">
+																																																<li role="presentation" class="active"><a href="#qt_1" aria-controls="home" role="tab" data-toggle="tab">一</a></li>
+																																																																																																																																																																																																											</ul>
+					<div class="tab-content" style="margin-top:5px;" id="questionindex">
+																																																<div role="tabpanel" class="tab-pane tableindex active" id="qt_1">
+										                			                			                							<a id="sign_1308" href="javascript:;" onclick="javascript:gotoquestion('1308')" class="btn btn-default">1</a>
+										                			                							<a id="sign_1309" href="javascript:;" onclick="javascript:gotoquestion('1309')" class="btn btn-default">2</a>
+										                			                							<a id="sign_1313" href="javascript:;" onclick="javascript:gotoquestion('1313')" class="btn btn-default">3</a>
+										                			                							<a id="sign_1320" href="javascript:;" onclick="javascript:gotoquestion('1320')" class="btn btn-default">4</a>
+										                			                							<a id="sign_1322" href="javascript:;" onclick="javascript:gotoquestion('1322')" class="btn btn-default">5</a>
+										                			                							<a id="sign_1332" href="javascript:;" onclick="javascript:gotoquestion('1332')" class="btn btn-default">6</a>
+										                			                							<a id="sign_1422" href="javascript:;" onclick="javascript:gotoquestion('1422')" class="btn btn-default">7</a>
+										                			                							<a id="sign_1424" href="javascript:;" onclick="javascript:gotoquestion('1424')" class="btn btn-default">8</a>
+										                			                							<a id="sign_1432" href="javascript:;" onclick="javascript:gotoquestion('1432')" class="btn btn-default">9</a>
+										                			                							<a id="sign_1443" href="javascript:;" onclick="javascript:gotoquestion('1443')" class="btn btn-default">10</a>
+										                			                							<a id="sign_1452" href="javascript:;" onclick="javascript:gotoquestion('1452')" class="btn btn-default">11</a>
+										                			                							<a id="sign_1454" href="javascript:;" onclick="javascript:gotoquestion('1454')" class="btn btn-default">12</a>
+										                			                							<a id="sign_1456" href="javascript:;" onclick="javascript:gotoquestion('1456')" class="btn btn-default">13</a>
+																				</div>
+																																																																																																																																																																																																											</div>
+				</dl>
+			</div>
+			<form id="form1" name="form1" method="post" action="index.php?exam-app-exercise-score" class="col-xs-9 split pull-right" style="padding:0px;">
+				<div class="box itembox">
+					<h2 class="text-center">0000</h2>
+				</div>
+																																<div class="box itembox questionpanel" id="questype_1">
+					<blockquote class="questype">一、单选题</blockquote>
+				</div>
+				                                                				<div class="box itembox paperexamcontent" id="questions_1308" rel="1">
+					<h4 class="title">
+						第1题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1308');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<!-- <a class="btn btn-info qicon" href="javascript:;" onclick="javascript:signQuestion('1308',this);"><i class="glyphicon glyphicon-bookmark"></i></a> -->
+							<a name="question_1308">
+							<input id="time_1308" type="hidden" name="time[1308]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a>对一个克隆的DNA片段做物理图谱分析，需要用					</div>
+															<div class="choice">
+                    	A．核酸外切酶    B．限制性内切酶     C．DNA连接酶     D．脱氧核糖核酸酶                    </div>
+                    					<div class="selector">
+                    		                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1308]" rel="1308" value="A" />A </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1308]" rel="1308" value="B" />B </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1308]" rel="1308" value="C" />C </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1308]" rel="1308" value="D" />D </label>
+	                        	                        	                        	                                        </div>
+										<div class="toolbar">
+																		<a class="pull-right btn btn-primary" onclick="javascript:gotoindexquestion(1);">下一题<span class="glyphicon glyphicon-chevron-right"></span></a>
+											</div>
+				</div>
+				                                				<div class="box itembox paperexamcontent" id="questions_1309" rel="1">
+					<h4 class="title">
+						第2题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1309');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<!-- <a class="btn btn-info qicon" href="javascript:;" onclick="javascript:signQuestion('1309',this);"><i class="glyphicon glyphicon-bookmark"></i></a> -->
+							<a name="question_1309">
+							<input id="time_1309" type="hidden" name="time[1309]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a>原核生物基因上游的TATA盒一般处于什么区					</div>
+															<div class="choice">
+                    	A．-10     B．-35     C．-200     D．1K                    </div>
+                    					<div class="selector">
+                    		                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1309]" rel="1309" value="A" />A </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1309]" rel="1309" value="B" />B </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1309]" rel="1309" value="C" />C </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1309]" rel="1309" value="D" />D </label>
+	                        	                        	                        	                                        </div>
+										<div class="toolbar">
+												<a class="btn btn-default" onclick="javascript:gotoindexquestion(0);"><span class="glyphicon glyphicon-chevron-left"></span>上一题</a>
+																		<a class="pull-right btn btn-primary" onclick="javascript:gotoindexquestion(2);">下一题<span class="glyphicon glyphicon-chevron-right"></span></a>
+											</div>
+				</div>
+				                                				<div class="box itembox paperexamcontent" id="questions_1313" rel="1">
+					<h4 class="title">
+						第3题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1313');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<!-- <a class="btn btn-info qicon" href="javascript:;" onclick="javascript:signQuestion('1313',this);"><i class="glyphicon glyphicon-bookmark"></i></a> -->
+							<a name="question_1313">
+							<input id="time_1313" type="hidden" name="time[1313]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a>粗糙型内质网系的主要功能是					</div>
+															<div class="choice">
+                    	A．糖类的合成    B．脂类的合成    C．分泌性蛋白质的合成    D．必需氨基酸的合成                    </div>
+                    					<div class="selector">
+                    		                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1313]" rel="1313" value="A" />A </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1313]" rel="1313" value="B" />B </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1313]" rel="1313" value="C" />C </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1313]" rel="1313" value="D" />D </label>
+	                        	                        	                        	                                        </div>
+										<div class="toolbar">
+												<a class="btn btn-default" onclick="javascript:gotoindexquestion(1);"><span class="glyphicon glyphicon-chevron-left"></span>上一题</a>
+																		<a class="pull-right btn btn-primary" onclick="javascript:gotoindexquestion(3);">下一题<span class="glyphicon glyphicon-chevron-right"></span></a>
+											</div>
+				</div>
+				                                				<div class="box itembox paperexamcontent" id="questions_1320" rel="1">
+					<h4 class="title">
+						第4题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1320');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<!-- <a class="btn btn-info qicon" href="javascript:;" onclick="javascript:signQuestion('1320',this);"><i class="glyphicon glyphicon-bookmark"></i></a> -->
+							<a name="question_1320">
+							<input id="time_1320" type="hidden" name="time[1320]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a>形成稳定的肽链空间结构，非常重要的一点是肽键中的四个原子以及和相邻的两个碳原子处于					</div>
+															<div class="choice">
+                    	A．不断扰动状态  B．可以相对自由旋转 C．同一平面 D．虽不同外界环境而变化的状态                    </div>
+                    					<div class="selector">
+                    		                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1320]" rel="1320" value="A" />A </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1320]" rel="1320" value="B" />B </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1320]" rel="1320" value="C" />C </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1320]" rel="1320" value="D" />D </label>
+	                        	                        	                        	                                        </div>
+										<div class="toolbar">
+												<a class="btn btn-default" onclick="javascript:gotoindexquestion(2);"><span class="glyphicon glyphicon-chevron-left"></span>上一题</a>
+																		<a class="pull-right btn btn-primary" onclick="javascript:gotoindexquestion(4);">下一题<span class="glyphicon glyphicon-chevron-right"></span></a>
+											</div>
+				</div>
+				                                				<div class="box itembox paperexamcontent" id="questions_1322" rel="1">
+					<h4 class="title">
+						第5题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1322');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<!-- <a class="btn btn-info qicon" href="javascript:;" onclick="javascript:signQuestion('1322',this);"><i class="glyphicon glyphicon-bookmark"></i></a> -->
+							<a name="question_1322">
+							<input id="time_1322" type="hidden" name="time[1322]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a>以下酶中哪一个是属于黄素核苷酸与酶蛋白以共价键相连的					</div>
+															<div class="choice">
+                    	A．NADH脱氢酶  B．甘油磷酸脱氢酶  C．胆碱脱氢酶  D．琥珀酸脱氢酶                    </div>
+                    					<div class="selector">
+                    		                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1322]" rel="1322" value="A" />A </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1322]" rel="1322" value="B" />B </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1322]" rel="1322" value="C" />C </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1322]" rel="1322" value="D" />D </label>
+	                        	                        	                        	                                        </div>
+										<div class="toolbar">
+												<a class="btn btn-default" onclick="javascript:gotoindexquestion(3);"><span class="glyphicon glyphicon-chevron-left"></span>上一题</a>
+																		<a class="pull-right btn btn-primary" onclick="javascript:gotoindexquestion(5);">下一题<span class="glyphicon glyphicon-chevron-right"></span></a>
+											</div>
+				</div>
+				                                				<div class="box itembox paperexamcontent" id="questions_1332" rel="1">
+					<h4 class="title">
+						第6题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1332');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<!-- <a class="btn btn-info qicon" href="javascript:;" onclick="javascript:signQuestion('1332',this);"><i class="glyphicon glyphicon-bookmark"></i></a> -->
+							<a name="question_1332">
+							<input id="time_1332" type="hidden" name="time[1332]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a>长链脂肪酰CoA经氧化作用，生成乙酰CoA是在什么细胞器上进行的					</div>
+															<div class="choice">
+                    	A．微粒体        B．内质网       C．线粒体      D．细胞膜                    </div>
+                    					<div class="selector">
+                    		                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1332]" rel="1332" value="A" />A </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1332]" rel="1332" value="B" />B </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1332]" rel="1332" value="C" />C </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1332]" rel="1332" value="D" />D </label>
+	                        	                        	                        	                                        </div>
+										<div class="toolbar">
+												<a class="btn btn-default" onclick="javascript:gotoindexquestion(4);"><span class="glyphicon glyphicon-chevron-left"></span>上一题</a>
+																		<a class="pull-right btn btn-primary" onclick="javascript:gotoindexquestion(6);">下一题<span class="glyphicon glyphicon-chevron-right"></span></a>
+											</div>
+				</div>
+				                                				<div class="box itembox paperexamcontent" id="questions_1422" rel="1">
+					<h4 class="title">
+						第7题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1422');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<!-- <a class="btn btn-info qicon" href="javascript:;" onclick="javascript:signQuestion('1422',this);"><i class="glyphicon glyphicon-bookmark"></i></a> -->
+							<a name="question_1422">
+							<input id="time_1422" type="hidden" name="time[1422]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a>下面哪一项代谢是在细胞质内进行的					</div>
+															<div class="choice">
+                    	A、脂肪酸的β-氧化         B、氧化磷酸化        C、三羧酸循环              D、脂肪酸合成                    </div>
+                    					<div class="selector">
+                    		                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1422]" rel="1422" value="A" />A </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1422]" rel="1422" value="B" />B </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1422]" rel="1422" value="C" />C </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1422]" rel="1422" value="D" />D </label>
+	                        	                        	                        	                                        </div>
+										<div class="toolbar">
+												<a class="btn btn-default" onclick="javascript:gotoindexquestion(5);"><span class="glyphicon glyphicon-chevron-left"></span>上一题</a>
+																		<a class="pull-right btn btn-primary" onclick="javascript:gotoindexquestion(7);">下一题<span class="glyphicon glyphicon-chevron-right"></span></a>
+											</div>
+				</div>
+				                                				<div class="box itembox paperexamcontent" id="questions_1424" rel="1">
+					<h4 class="title">
+						第8题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1424');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<!-- <a class="btn btn-info qicon" href="javascript:;" onclick="javascript:signQuestion('1424',this);"><i class="glyphicon glyphicon-bookmark"></i></a> -->
+							<a name="question_1424">
+							<input id="time_1424" type="hidden" name="time[1424]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a>从血红蛋白规水解得到的氨基酸的手性光学性质：					</div>
+															<div class="choice">
+                    	A．都是L型的；  B。都是左旋的；  C。并非都是L型的；  D。有D型的也有L型的                    </div>
+                    					<div class="selector">
+                    		                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1424]" rel="1424" value="A" />A </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1424]" rel="1424" value="B" />B </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1424]" rel="1424" value="C" />C </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1424]" rel="1424" value="D" />D </label>
+	                        	                        	                        	                                        </div>
+										<div class="toolbar">
+												<a class="btn btn-default" onclick="javascript:gotoindexquestion(6);"><span class="glyphicon glyphicon-chevron-left"></span>上一题</a>
+																		<a class="pull-right btn btn-primary" onclick="javascript:gotoindexquestion(8);">下一题<span class="glyphicon glyphicon-chevron-right"></span></a>
+											</div>
+				</div>
+				                                				<div class="box itembox paperexamcontent" id="questions_1432" rel="1">
+					<h4 class="title">
+						第9题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1432');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<!-- <a class="btn btn-info qicon" href="javascript:;" onclick="javascript:signQuestion('1432',this);"><i class="glyphicon glyphicon-bookmark"></i></a> -->
+							<a name="question_1432">
+							<input id="time_1432" type="hidden" name="time[1432]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a>核苷酸从头合成中，嘧啶环的1位氮原子来自					</div>
+															<div class="choice">
+                    	A．天冬氨酸B．赖氨酸C．谷氨酰胺 D．甘氨酸                    </div>
+                    					<div class="selector">
+                    		                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1432]" rel="1432" value="A" />A </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1432]" rel="1432" value="B" />B </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1432]" rel="1432" value="C" />C </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1432]" rel="1432" value="D" />D </label>
+	                        	                        	                        	                                        </div>
+										<div class="toolbar">
+												<a class="btn btn-default" onclick="javascript:gotoindexquestion(7);"><span class="glyphicon glyphicon-chevron-left"></span>上一题</a>
+																		<a class="pull-right btn btn-primary" onclick="javascript:gotoindexquestion(9);">下一题<span class="glyphicon glyphicon-chevron-right"></span></a>
+											</div>
+				</div>
+				                                				<div class="box itembox paperexamcontent" id="questions_1443" rel="1">
+					<h4 class="title">
+						第10题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1443');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<!-- <a class="btn btn-info qicon" href="javascript:;" onclick="javascript:signQuestion('1443',this);"><i class="glyphicon glyphicon-bookmark"></i></a> -->
+							<a name="question_1443">
+							<input id="time_1443" type="hidden" name="time[1443]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a>PPGPP在下列情况下被合成					</div>
+															<div class="choice">
+                    	A．细菌缺乏氮源时   B．细菌缺乏碳源时   C．细菌在环境温度太高时    D．细菌在环境温度太低时                    </div>
+                    					<div class="selector">
+                    		                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1443]" rel="1443" value="A" />A </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1443]" rel="1443" value="B" />B </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1443]" rel="1443" value="C" />C </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1443]" rel="1443" value="D" />D </label>
+	                        	                        	                        	                                        </div>
+										<div class="toolbar">
+												<a class="btn btn-default" onclick="javascript:gotoindexquestion(8);"><span class="glyphicon glyphicon-chevron-left"></span>上一题</a>
+																		<a class="pull-right btn btn-primary" onclick="javascript:gotoindexquestion(10);">下一题<span class="glyphicon glyphicon-chevron-right"></span></a>
+											</div>
+				</div>
+				                                				<div class="box itembox paperexamcontent" id="questions_1452" rel="1">
+					<h4 class="title">
+						第11题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1452');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<!-- <a class="btn btn-info qicon" href="javascript:;" onclick="javascript:signQuestion('1452',this);"><i class="glyphicon glyphicon-bookmark"></i></a> -->
+							<a name="question_1452">
+							<input id="time_1452" type="hidden" name="time[1452]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a>端粒酶（tolermerase）是属于					</div>
+															<div class="choice">
+                    	A．限制性内切酶  B．DNA聚合酶  C．RNA聚合酶  D．肽酰转移酶                    </div>
+                    					<div class="selector">
+                    		                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1452]" rel="1452" value="A" />A </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1452]" rel="1452" value="B" />B </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1452]" rel="1452" value="C" />C </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1452]" rel="1452" value="D" />D </label>
+	                        	                        	                        	                                        </div>
+										<div class="toolbar">
+												<a class="btn btn-default" onclick="javascript:gotoindexquestion(9);"><span class="glyphicon glyphicon-chevron-left"></span>上一题</a>
+																		<a class="pull-right btn btn-primary" onclick="javascript:gotoindexquestion(11);">下一题<span class="glyphicon glyphicon-chevron-right"></span></a>
+											</div>
+				</div>
+				                                				<div class="box itembox paperexamcontent" id="questions_1454" rel="1">
+					<h4 class="title">
+						第12题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1454');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<!-- <a class="btn btn-info qicon" href="javascript:;" onclick="javascript:signQuestion('1454',this);"><i class="glyphicon glyphicon-bookmark"></i></a> -->
+							<a name="question_1454">
+							<input id="time_1454" type="hidden" name="time[1454]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a>下列RNA中含修饰核苷酸最多的是					</div>
+															<div class="choice">
+                    	A．mRNA  B．rRNA  C．tRNA  D．病毒RNA                    </div>
+                    					<div class="selector">
+                    		                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1454]" rel="1454" value="A" />A </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1454]" rel="1454" value="B" />B </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1454]" rel="1454" value="C" />C </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1454]" rel="1454" value="D" />D </label>
+	                        	                        	                        	                                        </div>
+										<div class="toolbar">
+												<a class="btn btn-default" onclick="javascript:gotoindexquestion(10);"><span class="glyphicon glyphicon-chevron-left"></span>上一题</a>
+																		<a class="pull-right btn btn-primary" onclick="javascript:gotoindexquestion(12);">下一题<span class="glyphicon glyphicon-chevron-right"></span></a>
+											</div>
+				</div>
+				                                				<div class="box itembox paperexamcontent" id="questions_1456" rel="1">
+					<h4 class="title">
+						第13题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1456');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<!-- <a class="btn btn-info qicon" href="javascript:;" onclick="javascript:signQuestion('1456',this);"><i class="glyphicon glyphicon-bookmark"></i></a> -->
+							<a name="question_1456">
+							<input id="time_1456" type="hidden" name="time[1456]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a>一个RNA片段AGGGCUGA，T1酶全酶切后HPLC分析可获得的峰的数量为					</div>
+															<div class="choice">
+                    	A．2  B．3  C．4  D．5                    </div>
+                    					<div class="selector">
+                    		                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1456]" rel="1456" value="A" />A </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1456]" rel="1456" value="B" />B </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1456]" rel="1456" value="C" />C </label>
+	                        	                        	                        <label class="radio-inline"><input type="radio" name="question[1456]" rel="1456" value="D" />D </label>
+	                        	                        	                        	                                        </div>
+										<div class="toolbar">
+												<a class="btn btn-default" onclick="javascript:gotoindexquestion(11);"><span class="glyphicon glyphicon-chevron-left"></span>上一题</a>
+																	</div>
+				</div>
+																																																																																																																																																<h3 class="text-center">
+					<input type="hidden" name="insertscore" value="1"/>
+					<a class="btn btn-primary" style="font-size:1em;width:270px;" href="#submodal" role="button" data-toggle="modal">交 卷</a>
+				</h3>
+			</form>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="submodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">交卷</h4>
+			</div>
+			<div class="modal-body">
+				<p>共有试题 <span class="allquestionnumber">50</span> 题，已做 <span class="yesdonumber">0</span> 题。您确认要交卷吗？</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" onclick="javascript:submitPaper();" class="btn btn-primary">确定交卷</button>
+				<button aria-hidden="true" class="btn" type="button" data-dismiss="modal">再检查一下</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+var qindex = 0;
+function gotoquestion(questid)
+{
+	$(".questionpanel").hide();
+	$(".paperexamcontent").hide();
+	$("#questions_"+questid).show();
+	$("#questype_"+$("#questions_"+questid).attr('rel')).show();
+}
+function gotoindexquestion(index)
+{
+	$(".questionpanel").hide();
+	$(".paperexamcontent").hide();
+	$(".paperexamcontent").eq(index).show();
+	$("#questype_"+$(".paperexamcontent").eq(index).attr('rel')).show();
+}
+$(document).ready(function(){
+	$.get('index.php?exam-app-index-ajax-lefttime&rand'+Math.random(),function(data){
+		var setting = {
+						time:60,
+						hbox:$("#timer_h"),
+			mbox:$("#timer_m"),
+			sbox:$("#timer_s"),
+			finish:function(){
+				submitPaper();
+			}
+		}
+		setting.lefttime = parseInt(data);
+		countdown(setting);
+	});
+
+	(function(){
+		$(".questionpanel").hide();
+		$(".questionpanel:first").show();
+		$(".paperexamcontent").hide();
+		$(".paperexamcontent:first").show();
+	})();
+
+	setInterval(saveanswer,120000);
+
+	initData = $.parseJSON(storage.getItem('questions'));
+	if(initData){
+		for(var p in initData){
+			if(p!='set')
+			formData[p]=initData[p];
+			$("#time_"+$('[name="'+p+'"]').attr('rel')).val(initData[p].time);
+		}
+
+		var textarea = $('#form1 textarea');
+		$.each(textarea,function(){
+			var _this = $(this);
+			if(initData[_this.attr('name')])
+			{
+				_this.val(initData[_this.attr('name')].value);
+				CKEDITOR.instances[_this.attr('id')].setData(initData[_this.attr('name')].value);
+				if(initData[_this.attr('name')].value && initData[_this.attr('name')].value != '')
+				batmark(_this.attr('rel'),initData[_this.attr('name')].value);
+			}
+		});
+		var texts = $('#form1 :input[type=text]');
+		$.each(texts,function(){
+			var _this = $(this);
+			if(initData[_this.attr('name')])
+			{
+				_this.val(initData[_this.attr('name')]?initData[_this.attr('name')].value:'');
+				if(initData[_this.attr('name')].value && initData[_this.attr('name')].value != '')
+				batmark(_this.attr('rel'),initData[_this.attr('name')].value);
+			}
+		});
+
+		var radios = $('#form1 :input[type=radio]');
+		$.each(radios,function(){
+			var _= this, v = initData[_.name]?initData[_.name].value:null;
+			var _this = $(this);
+			if(v!=''&&v==_.value){
+				_.checked = true;
+				batmark(_this.attr('rel'),initData[_this.attr('name')].value);
+			}else{
+				_.checked=false;
+			}
+		});
+
+		var checkboxs=$('#form1 :input[type=checkbox]');
+		$.each(checkboxs,function(){
+			var _=this,v=initData[_.name]?initData[_.name].value:null;
+			var _this = $(this);
+			if(v!=''&&v==_.value){
+				_.checked=true;
+				batmark(_this.attr('rel'),initData[_this.attr('name')].value);
+			}else{
+				_.checked=false;
+			}
+		});
+	}
+
+	$('#form1 :input[type=text]').change(function(){
+		var _this=$(this);
+		var p=[];
+		p.push(_this.attr('name'));
+		p.push(_this.val());
+		p.push(Date.parse(new Date())/1000);
+		$('#time_'+_this.attr('rel')).val(Date.parse(new Date())/1000);
+		set.apply(formData,p);
+		markQuestion(_this.attr('rel'),true);
+	});
+
+	$('#form1 :input[type=radio]').change(function(){
+		var _=this;
+		var _this=$(this);
+		var p=[];
+		p.push(_.name);
+		if(_.checked){
+			p.push(_.value);
+			p.push(Date.parse(new Date())/1000);
+			$('#time_'+_this.attr('rel')).val(Date.parse(new Date())/1000);
+			set.apply(formData,p);
+		}else{
+			p.push('');
+			p.push(null);
+			set.apply(formData,p);
+		}
+		markQuestion(_this.attr('rel'));
+	});
+
+	$('#form1 textarea').change(function(){
+		var _= this;
+		var _this=$(this);
+		var p=[];
+		p.push(_.name);
+		p.push(_.value);
+		p.push(Date.parse(new Date())/1000);
+		$('#time_'+_this.attr('rel')).val(Date.parse(new Date())/1000);
+		set.apply(formData,p);
+		markQuestion(_this.attr('rel'),true);
+	});
+	$('#form1 :input[type=checkbox]').change(function(){
+		var _= this;
+		var _this = $(this);
+		var p=[];
+		p.push(_.name);
+		if(_.checked){
+			p.push(_.value);
+			p.push(Date.parse(new Date())/1000);
+			$('#time_'+_this.attr('rel')).val(Date.parse(new Date())/1000);
+			set.apply(formData,p);
+		}else{
+			p.push('');
+			p.push(null);
+			set.apply(formData,p);
+		}
+		markQuestion(_this.attr('rel'));
+	});
+	$('.allquestionnumber').html($('.paperexamcontent').length);
+	$('.yesdonumber').html($('#questionindex .btn-primary').length);
+});
+</script>
+</body>
+</html>

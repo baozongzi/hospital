@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>模拟考试系统</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="app/core/styles/css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="app/core/styles/css/datetimepicker.css" />
+	<link rel="stylesheet" type="text/css" href="app/core/styles/css/jquery-ui.min.css" />
+	<link rel="stylesheet" type="text/css" href="app/core/styles/css/peskin.css" />
+	<!--[if lt IE 9]>
+	<script src="app/core/styles/js/html5shiv.min.js"></script>
+	<script src="app/core/styles/js/respond.min.js"></script>
+	<![endif]-->
+	<script src="app/core/styles/js/jquery.min.js"></script>
+	<script src="app/core/styles/js/jquery.json.js"></script>
+	<script src="app/core/styles/js/jquery-ui.min.js"></script>
+	<script src="app/core/styles/js/bootstrap.min.js"></script>
+	<script src="app/core/styles/js/bootstrap-datetimepicker.js"></script>
+
+	<script src="app/core/styles/js/all.fine-uploader.min.js"></script>
+
+	<script src="app/core/styles/js/ckeditor/ckeditor.js"></script>
+	<script src="app/core/styles/js/plugin.js"></script>
+	<script src="app/exam/styles/js/plugin.js"></script>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy">
+<div class="container-fluid" id="questioncontent">
+	<div class="row-fluid">
+		<div class="main box">
+			<div class="col-xs-3" id="questionbar">
+				<dl class="clear" style="width:270px;" data-spy="affix" data-offset-top="235">
+					<dt class="float_l"><h4>&nbsp;</h4></dt>
+					<ul class="nav nav-tabs" role="tablist">
+																																										<li role="presentation" class="active"><a href="#qt_1" aria-controls="home" role="tab" data-toggle="tab">一</a></li>
+																																																<li role="presentation"><a href="#qt_2" aria-controls="home" role="tab" data-toggle="tab">二</a></li>
+																																																<li role="presentation"><a href="#qt_3" aria-controls="home" role="tab" data-toggle="tab">三</a></li>
+																																																																														<li role="presentation"><a href="#qt_5" aria-controls="home" role="tab" data-toggle="tab">四</a></li>
+																																																																	</ul>
+					<div class="tab-content" style="margin-top:5px;" id="questionindex">
+																																										<div role="tabpanel" class="tab-pane tableindex active" id="qt_1">
+										                			                							<a id="sign_1293" href="#question_1293" class="btn btn-default">1</a>
+										                							<a id="sign_1294" href="#question_1294" class="btn btn-default">2</a>
+										                							<a id="sign_1295" href="#question_1295" class="btn btn-default">3</a>
+										                							<a id="sign_1326" href="#question_1326" class="btn btn-default">4</a>
+										                							<a id="sign_1327" href="#question_1327" class="btn btn-default">5</a>
+										                							<a id="sign_1328" href="#question_1328" class="btn btn-default">6</a>
+										                							<a id="sign_1329" href="#question_1329" class="btn btn-default">7</a>
+										                							<a id="sign_1330" href="#question_1330" class="btn btn-default">8</a>
+										                							<a id="sign_1331" href="#question_1331" class="btn btn-default">9</a>
+										                							<a id="sign_1332" href="#question_1332" class="btn btn-default">10</a>
+										                							<a id="sign_1333" href="#question_1333" class="btn btn-default">11</a>
+										                							<a id="sign_1334" href="#question_1334" class="btn btn-default">12</a>
+										                							<a id="sign_1389" href="#question_1389" class="btn btn-default">13</a>
+										                							<a id="sign_1399" href="#question_1399" class="btn btn-default">14</a>
+										                							<a id="sign_1400" href="#question_1400" class="btn btn-default">15</a>
+																				</div>
+																																																<div role="tabpanel" class="tab-pane tableindex" id="qt_2">
+										                			                							<a id="sign_1379" href="#question_1379" class="btn btn-default">1</a>
+										                							<a id="sign_1382" href="#question_1382" class="btn btn-default">2</a>
+										                							<a id="sign_1396" href="#question_1396" class="btn btn-default">3</a>
+										                							<a id="sign_1397" href="#question_1397" class="btn btn-default">4</a>
+										                							<a id="sign_1398" href="#question_1398" class="btn btn-default">5</a>
+																				</div>
+																																																<div role="tabpanel" class="tab-pane tableindex" id="qt_3">
+										                			                							<a id="sign_1387" href="#question_1387" class="btn btn-default">1</a>
+										                							<a id="sign_1392" href="#question_1392" class="btn btn-default">2</a>
+										                							<a id="sign_1393" href="#question_1393" class="btn btn-default">3</a>
+										                							<a id="sign_1394" href="#question_1394" class="btn btn-default">4</a>
+										                							<a id="sign_1395" href="#question_1395" class="btn btn-default">5</a>
+																				</div>
+																																																																														<div role="tabpanel" class="tab-pane tableindex" id="qt_5">
+										                			                							<a id="sign_1378" href="#question_1378" class="btn btn-default">1</a>
+																				</div>
+																																																																	</div>
+				</dl>
+			</div>
+			<div class="col-xs-9 split pull-right" style="padding:0px;position:relative;">
+				<div class="scoreArea">4.00</div>
+				<div class="box itembox">
+					<h2 class="text-center tt">手工组卷测试</h2>
+				</div>
+																												<hr />
+				<div class="box itembox">
+					<blockquote class="questype">一、单选题</blockquote>
+				</div>
+					            	            				<div class="box itembox paperexamcontent">
+					<h4 class="title">
+						第1题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1293');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<a name="question_1293">
+							<input id="time_1293" type="hidden" name="time[1293]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a>维持蛋白质二级结构稳定的主要因素是					</div>
+															<div class="choice">
+	                	A、静电作用力B、氢键C、疏水键D、范德华作用力	                </div>
+	                	                					<div class="decidediv" style="border-left:10px solid #CCCCCC;position:relative;">
+	                	<div class="right"></div>	                	<table class="table table-hover table-bordered">
+            				<tr class="info">
+	                			<th colspan="2" style="border-top:0px;">本题得分：4分</th>
+	                		</tr>
+	                		<tr>
+	                    		<td width="15%">正确答案：</td>
+	                    		<td>B</td>
+	                    	</tr>
+	                    	<tr>
+	                    		<td>考生答案：</td>
+	                        	<td>B</td>
+	                    	</tr>
+	                	</table>
+	                </div>
+				</div>
+					            				<div class="box itembox paperexamcontent">
+					<h4 class="title">
+						第2题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1294');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<a name="question_1294">
+							<input id="time_1294" type="hidden" name="time[1294]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a>下面哪一项代谢是在细胞质内进行的					</div>
+															<div class="choice">
+	                	A、脂肪酸的β-氧化         B、氧化磷酸化        C、三羧酸循环              D、脂肪酸合成	                </div>
+	                	                					<div class="decidediv" style="border-left:10px solid #CCCCCC;position:relative;">
+	                	<div class="wrong"></div>	                	<table class="table table-hover table-bordered">
+            				<tr class="info">
+	                			<th colspan="2" style="border-top:0px;">本题得分：0分</th>
+	                		</tr>
+	                		<tr>
+	                    		<td width="15%">正确答案：</td>
+	                    		<td>D</td>
+	                    	</tr>
+	                    	<tr>
+	                    		<td>考生答案：</td>
+	                        	<td></td>
+	                    	</tr>
+	                	</table>
+	                </div>
+				</div>
+					            				<div class="box itembox paperexamcontent">
+					<h4 class="title">
+						第3题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1295');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<a name="question_1295">
+							<input id="time_1295" type="hidden" name="time[1295]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a>米氏常数Km是一个用来度量					</div>
+															<div class="choice">
+	                	A、酶和底物亲和力大小的常数?????????????B、酶促反应速度大小的常数??C、酶被底物饱和程度的常数???????????????D、酶的稳定性的常数	                </div>
+	                	                					<div class="decidediv" style="border-left:10px solid #CCCCCC;position:relative;">
+	                	<div class="wrong"></div>	                	<table class="table table-hover table-bordered">
+            				<tr class="info">
+	                			<th colspan="2" style="border-top:0px;">本题得分：0分</th>
+	                		</tr>
+	                		<tr>
+	                    		<td width="15%">正确答案：</td>
+	                    		<td>A</td>
+	                    	</tr>
+	                    	<tr>
+	                    		<td>考生答案：</td>
+	                        	<td></td>
+	                    	</tr>
+	                	</table>
+	                </div>
+				</div>
+					            				<div class="box itembox paperexamcontent">
+					<h4 class="title">
+						第4题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1326');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<a name="question_1326">
+							<input id="time_1326" type="hidden" name="time[1326]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a>下列RNA中含修饰核苷酸最多的是					</div>
+															<div class="choice">
+	                	A．mRNA  B．rRNA  C．tRNA  D．病毒RNA	                </div>
+	                	                					<div class="decidediv" style="border-left:10px solid #CCCCCC;position:relative;">
+	                	<div class="wrong"></div>	                	<table class="table table-hover table-bordered">
+            				<tr class="info">
+	                			<th colspan="2" style="border-top:0px;">本题得分：0分</th>
+	                		</tr>
+	                		<tr>
+	                    		<td width="15%">正确答案：</td>
+	                    		<td>C</td>
+	                    	</tr>
+	                    	<tr>
+	                    		<td>考生答案：</td>
+	                        	<td></td>
+	                    	</tr>
+	                	</table>
+	                </div>
+				</div>
+					            				<div class="box itembox paperexamcontent">
+					<h4 class="title">
+						第5题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1327');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<a name="question_1327">
+							<input id="time_1327" type="hidden" name="time[1327]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a>转录真核rRNA的酶是					</div>
+															<div class="choice">
+	                	A．RNA聚合酶Ⅰ     B．RNA聚合酶Ⅱ     C．RNA聚合酶Ⅲ	                </div>
+	                	                					<div class="decidediv" style="border-left:10px solid #CCCCCC;position:relative;">
+	                	<div class="wrong"></div>	                	<table class="table table-hover table-bordered">
+            				<tr class="info">
+	                			<th colspan="2" style="border-top:0px;">本题得分：0分</th>
+	                		</tr>
+	                		<tr>
+	                    		<td width="15%">正确答案：</td>
+	                    		<td>A</td>
+	                    	</tr>
+	                    	<tr>
+	                    		<td>考生答案：</td>
+	                        	<td></td>
+	                    	</tr>
+	                	</table>
+	                </div>
+				</div>
+					            				<div class="box itembox paperexamcontent">
+					<h4 class="title">
+						第6题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1328');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<a name="question_1328">
+							<input id="time_1328" type="hidden" name="time[1328]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a>一个RNA片段AGGGCUGA，T1酶全酶切后HPLC分析可获得的峰的数量为					</div>
+															<div class="choice">
+	                	A．2  B．3  C．4  D．5	                </div>
+	                	                					<div class="decidediv" style="border-left:10px solid #CCCCCC;position:relative;">
+	                	<div class="wrong"></div>	                	<table class="table table-hover table-bordered">
+            				<tr class="info">
+	                			<th colspan="2" style="border-top:0px;">本题得分：0分</th>
+	                		</tr>
+	                		<tr>
+	                    		<td width="15%">正确答案：</td>
+	                    		<td>C</td>
+	                    	</tr>
+	                    	<tr>
+	                    		<td>考生答案：</td>
+	                        	<td></td>
+	                    	</tr>
+	                	</table>
+	                </div>
+				</div>
+					            				<div class="box itembox paperexamcontent">
+					<h4 class="title">
+						第7题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1329');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<a name="question_1329">
+							<input id="time_1329" type="hidden" name="time[1329]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a>氨酰tRNA合成酶的底物数为					</div>
+															<div class="choice">
+	                	A．1         B．2        C．3           D．4	                </div>
+	                	                					<div class="decidediv" style="border-left:10px solid #CCCCCC;position:relative;">
+	                	<div class="wrong"></div>	                	<table class="table table-hover table-bordered">
+            				<tr class="info">
+	                			<th colspan="2" style="border-top:0px;">本题得分：0分</th>
+	                		</tr>
+	                		<tr>
+	                    		<td width="15%">正确答案：</td>
+	                    		<td>C</td>
+	                    	</tr>
+	                    	<tr>
+	                    		<td>考生答案：</td>
+	                        	<td></td>
+	                    	</tr>
+	                	</table>
+	                </div>
+				</div>
+					            				<div class="box itembox paperexamcontent">
+					<h4 class="title">
+						第8题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1330');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<a name="question_1330">
+							<input id="time_1330" type="hidden" name="time[1330]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a>雌二醇生物合成的直接前体是					</div>
+															<div class="choice">
+	                	A．雌酮      B．孕酮     C．睾酮        D．雌三醇	                </div>
+	                	                					<div class="decidediv" style="border-left:10px solid #CCCCCC;position:relative;">
+	                	<div class="wrong"></div>	                	<table class="table table-hover table-bordered">
+            				<tr class="info">
+	                			<th colspan="2" style="border-top:0px;">本题得分：0分</th>
+	                		</tr>
+	                		<tr>
+	                    		<td width="15%">正确答案：</td>
+	                    		<td>C</td>
+	                    	</tr>
+	                    	<tr>
+	                    		<td>考生答案：</td>
+	                        	<td></td>
+	                    	</tr>
+	                	</table>
+	                </div>
+				</div>
+					            				<div class="box itembox paperexamcontent">
+					<h4 class="title">
+						第9题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1331');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<a name="question_1331">
+							<input id="time_1331" type="hidden" name="time[1331]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a>真核生物有DNA聚合酶α、β、γ、δ，其中δ主要负责					</div>
+															<div class="choice">
+	                	A．DNA的复制    B．切除引物    C．参与修复    D．解开双螺旋	                </div>
+	                	                					<div class="decidediv" style="border-left:10px solid #CCCCCC;position:relative;">
+	                	<div class="wrong"></div>	                	<table class="table table-hover table-bordered">
+            				<tr class="info">
+	                			<th colspan="2" style="border-top:0px;">本题得分：0分</th>
+	                		</tr>
+	                		<tr>
+	                    		<td width="15%">正确答案：</td>
+	                    		<td>A</td>
+	                    	</tr>
+	                    	<tr>
+	                    		<td>考生答案：</td>
+	                        	<td></td>
+	                    	</tr>
+	                	</table>
+	                </div>
+				</div>
+					            				<div class="box itembox paperexamcontent">
+					<h4 class="title">
+						第10题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1332');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<a name="question_1332">
+							<input id="time_1332" type="hidden" name="time[1332]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a>长链脂肪酰CoA经氧化作用，生成乙酰CoA是在什么细胞器上进行的					</div>
+															<div class="choice">
+	                	A．微粒体        B．内质网       C．线粒体      D．细胞膜	                </div>
+	                	                					<div class="decidediv" style="border-left:10px solid #CCCCCC;position:relative;">
+	                	<div class="wrong"></div>	                	<table class="table table-hover table-bordered">
+            				<tr class="info">
+	                			<th colspan="2" style="border-top:0px;">本题得分：0分</th>
+	                		</tr>
+	                		<tr>
+	                    		<td width="15%">正确答案：</td>
+	                    		<td>C</td>
+	                    	</tr>
+	                    	<tr>
+	                    		<td>考生答案：</td>
+	                        	<td></td>
+	                    	</tr>
+	                	</table>
+	                </div>
+				</div>
+					            				<div class="box itembox paperexamcontent">
+					<h4 class="title">
+						第11题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1333');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<a name="question_1333">
+							<input id="time_1333" type="hidden" name="time[1333]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a>DNA分子上能被依赖DNA的RNA聚合酶特意识别的部位是					</div>
+															<div class="choice">
+	                	A．衰减子        B．操纵子       C．启动子      D．终止子	                </div>
+	                	                					<div class="decidediv" style="border-left:10px solid #CCCCCC;position:relative;">
+	                	<div class="wrong"></div>	                	<table class="table table-hover table-bordered">
+            				<tr class="info">
+	                			<th colspan="2" style="border-top:0px;">本题得分：0分</th>
+	                		</tr>
+	                		<tr>
+	                    		<td width="15%">正确答案：</td>
+	                    		<td>C</td>
+	                    	</tr>
+	                    	<tr>
+	                    		<td>考生答案：</td>
+	                        	<td></td>
+	                    	</tr>
+	                	</table>
+	                </div>
+				</div>
+					            				<div class="box itembox paperexamcontent">
+					<h4 class="title">
+						第12题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1334');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<a name="question_1334">
+							<input id="time_1334" type="hidden" name="time[1334]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a>哺乳动物在正常生理条件下，一般氨基酸的氨基被脱去，主要通过					</div>
+															<div class="choice">
+	                	A．氨基酸氧化酶的作用 B．转录酶的作用C．转氨酶和谷氨酸脱酶的联合作用 D．谷氨酸脱氢酶的作用	                </div>
+	                	                					<div class="decidediv" style="border-left:10px solid #CCCCCC;position:relative;">
+	                	<div class="wrong"></div>	                	<table class="table table-hover table-bordered">
+            				<tr class="info">
+	                			<th colspan="2" style="border-top:0px;">本题得分：0分</th>
+	                		</tr>
+	                		<tr>
+	                    		<td width="15%">正确答案：</td>
+	                    		<td>A</td>
+	                    	</tr>
+	                    	<tr>
+	                    		<td>考生答案：</td>
+	                        	<td></td>
+	                    	</tr>
+	                	</table>
+	                </div>
+				</div>
+					            				<div class="box itembox paperexamcontent">
+					<h4 class="title">
+						第13题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1389');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<a name="question_1389">
+							<input id="time_1389" type="hidden" name="time[1389]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a>下面是LIMS账号申请规则：					</div>
+															<div class="choice">
+	                	A．本课题组管理员添加并激活   B．由使用者注册，带着课题组长签字的申请表，来重点室平台激活    C．使用者自行注册，手机激活码激活  D.随来随办	                </div>
+	                	                					<div class="decidediv" style="border-left:10px solid #CCCCCC;position:relative;">
+	                	<div class="wrong"></div>	                	<table class="table table-hover table-bordered">
+            				<tr class="info">
+	                			<th colspan="2" style="border-top:0px;">本题得分：0分</th>
+	                		</tr>
+	                		<tr>
+	                    		<td width="15%">正确答案：</td>
+	                    		<td>B</td>
+	                    	</tr>
+	                    	<tr>
+	                    		<td>考生答案：</td>
+	                        	<td></td>
+	                    	</tr>
+	                	</table>
+	                </div>
+				</div>
+					            				<div class="box itembox paperexamcontent">
+					<h4 class="title">
+						第14题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1399');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<a name="question_1399">
+							<input id="time_1399" type="hidden" name="time[1399]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a><p>重点室平台的卡适用于：</p>					</div>
+															<div class="choice">
+	                	<p>A.刷开公共仪器实验室门 B.刷开管理员办公室 C.刷卡使用部分仪器 D.所有仪器均需刷卡使用</p>	                </div>
+	                	                					<div class="decidediv" style="border-left:10px solid #CCCCCC;position:relative;">
+	                	<div class="wrong"></div>	                	<table class="table table-hover table-bordered">
+            				<tr class="info">
+	                			<th colspan="2" style="border-top:0px;">本题得分：0分</th>
+	                		</tr>
+	                		<tr>
+	                    		<td width="15%">正确答案：</td>
+	                    		<td>D</td>
+	                    	</tr>
+	                    	<tr>
+	                    		<td>考生答案：</td>
+	                        	<td></td>
+	                    	</tr>
+	                	</table>
+	                </div>
+				</div>
+					            				<div class="box itembox paperexamcontent">
+					<h4 class="title">
+						第15题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1400');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<a name="question_1400">
+							<input id="time_1400" type="hidden" name="time[1400]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a><p>普通题添加测试</p>					</div>
+															<div class="choice">
+	                	<p>test1 test2</p>	                </div>
+	                	                					<div class="decidediv" style="border-left:10px solid #CCCCCC;position:relative;">
+	                	<div class="wrong"></div>	                	<table class="table table-hover table-bordered">
+            				<tr class="info">
+	                			<th colspan="2" style="border-top:0px;">本题得分：0分</th>
+	                		</tr>
+	                		<tr>
+	                    		<td width="15%">正确答案：</td>
+	                    		<td>A</td>
+	                    	</tr>
+	                    	<tr>
+	                    		<td>考生答案：</td>
+	                        	<td></td>
+	                    	</tr>
+	                	</table>
+	                </div>
+				</div>
+																																								<hr />
+				<div class="box itembox">
+					<blockquote class="questype">二、多选题</blockquote>
+				</div>
+					            	            				<div class="box itembox paperexamcontent">
+					<h4 class="title">
+						第1题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1379');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<a name="question_1379">
+							<input id="time_1379" type="hidden" name="time[1379]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a>下面属于重点室仪器平台的职责					</div>
+															<div class="choice">
+	                	A．收集实验相关大型仪器需求         B.维护平台仪器对外开放和使用        C.组织仪器使用培训              D.管理LIMS系统	                </div>
+	                	                					<div class="decidediv" style="border-left:10px solid #CCCCCC;position:relative;">
+	                	<div class="wrong"></div>	                	<table class="table table-hover table-bordered">
+            				<tr class="info">
+	                			<th colspan="2" style="border-top:0px;">本题得分：0分</th>
+	                		</tr>
+	                		<tr>
+	                    		<td width="15%">正确答案：</td>
+	                    		<td>ABCD</td>
+	                    	</tr>
+	                    	<tr>
+	                    		<td>考生答案：</td>
+	                        	<td></td>
+	                    	</tr>
+	                	</table>
+	                </div>
+				</div>
+					            				<div class="box itembox paperexamcontent">
+					<h4 class="title">
+						第2题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1382');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<a name="question_1382">
+							<input id="time_1382" type="hidden" name="time[1382]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a>下面几个实验室中，那些是重点室24小时全天候开放的公共仪器室					</div>
+															<div class="choice">
+	                	A．新楼209    B．新楼210        C．老楼321   D.老楼363	                </div>
+	                	                					<div class="decidediv" style="border-left:10px solid #CCCCCC;position:relative;">
+	                	<div class="wrong"></div>	                	<table class="table table-hover table-bordered">
+            				<tr class="info">
+	                			<th colspan="2" style="border-top:0px;">本题得分：0分</th>
+	                		</tr>
+	                		<tr>
+	                    		<td width="15%">正确答案：</td>
+	                    		<td>ABC</td>
+	                    	</tr>
+	                    	<tr>
+	                    		<td>考生答案：</td>
+	                        	<td></td>
+	                    	</tr>
+	                	</table>
+	                </div>
+				</div>
+					            				<div class="box itembox paperexamcontent">
+					<h4 class="title">
+						第3题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1396');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<a name="question_1396">
+							<input id="time_1396" type="hidden" name="time[1396]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a>马上要做一个实验，要登录仪器发现账号被封，原因可能是：					</div>
+															<div class="choice">
+	                	A．犯了错误被封账号    B．没有提交反馈，账号自动被封。    C．我的账号突然失联    D．密码泄露	                </div>
+	                	                					<div class="decidediv" style="border-left:10px solid #CCCCCC;position:relative;">
+	                	<div class="wrong"></div>	                	<table class="table table-hover table-bordered">
+            				<tr class="info">
+	                			<th colspan="2" style="border-top:0px;">本题得分：0分</th>
+	                		</tr>
+	                		<tr>
+	                    		<td width="15%">正确答案：</td>
+	                    		<td>AB</td>
+	                    	</tr>
+	                    	<tr>
+	                    		<td>考生答案：</td>
+	                        	<td></td>
+	                    	</tr>
+	                	</table>
+	                </div>
+				</div>
+					            				<div class="box itembox paperexamcontent">
+					<h4 class="title">
+						第4题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1397');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<a name="question_1397">
+							<input id="time_1397" type="hidden" name="time[1397]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a>要做ELISA实验，第一次使用重点室的酶标仪读数。您需要：					</div>
+															<div class="choice">
+	                	A．有LIMS账号       B．需要上机时让管理员老师帮忙      C．提前查知仪器位置并学会使用       D．可以让高年资师兄师姐指导使用	                </div>
+	                	                					<div class="decidediv" style="border-left:10px solid #CCCCCC;position:relative;">
+	                	<div class="wrong"></div>	                	<table class="table table-hover table-bordered">
+            				<tr class="info">
+	                			<th colspan="2" style="border-top:0px;">本题得分：0分</th>
+	                		</tr>
+	                		<tr>
+	                    		<td width="15%">正确答案：</td>
+	                    		<td>ACD</td>
+	                    	</tr>
+	                    	<tr>
+	                    		<td>考生答案：</td>
+	                        	<td></td>
+	                    	</tr>
+	                	</table>
+	                </div>
+				</div>
+					            				<div class="box itembox paperexamcontent">
+					<h4 class="title">
+						第5题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1398');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<a name="question_1398">
+							<input id="time_1398" type="hidden" name="time[1398]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a><p>要做荧光定量PCR实验，第一次使用相关仪器。您需要：</p>					</div>
+															<div class="choice">
+	                	<p>A．有LIMS账号 B．提前预约 C．提前查知仪器位置并学会使用 D．让高年资师兄师姐指导使用</p>	                </div>
+	                	                					<div class="decidediv" style="border-left:10px solid #CCCCCC;position:relative;">
+	                	<div class="wrong"></div>	                	<table class="table table-hover table-bordered">
+            				<tr class="info">
+	                			<th colspan="2" style="border-top:0px;">本题得分：0分</th>
+	                		</tr>
+	                		<tr>
+	                    		<td width="15%">正确答案：</td>
+	                    		<td>ABCD</td>
+	                    	</tr>
+	                    	<tr>
+	                    		<td>考生答案：</td>
+	                        	<td></td>
+	                    	</tr>
+	                	</table>
+	                </div>
+				</div>
+																																								<hr />
+				<div class="box itembox">
+					<blockquote class="questype">三、判断题</blockquote>
+				</div>
+					            	            				<div class="box itembox paperexamcontent">
+					<h4 class="title">
+						第1题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1387');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<a name="question_1387">
+							<input id="time_1387" type="hidden" name="time[1387]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a>重点室仪器平台LIMS系统只能在所内网登陆。					</div>
+											                					<div class="decidediv" style="border-left:10px solid #CCCCCC;position:relative;">
+	                	<div class="wrong"></div>	                	<table class="table table-hover table-bordered">
+            				<tr class="info">
+	                			<th colspan="2" style="border-top:0px;">本题得分：0分</th>
+	                		</tr>
+	                		<tr>
+	                    		<td width="15%">正确答案：</td>
+	                    		<td>对</td>
+	                    	</tr>
+	                    	<tr>
+	                    		<td>考生答案：</td>
+	                        	<td></td>
+	                    	</tr>
+	                	</table>
+	                </div>
+				</div>
+					            				<div class="box itembox paperexamcontent">
+					<h4 class="title">
+						第2题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1392');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<a name="question_1392">
+							<input id="time_1392" type="hidden" name="time[1392]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a>所有的仪器培训模式都是一样的。					</div>
+											                					<div class="decidediv" style="border-left:10px solid #CCCCCC;position:relative;">
+	                	<div class="wrong"></div>	                	<table class="table table-hover table-bordered">
+            				<tr class="info">
+	                			<th colspan="2" style="border-top:0px;">本题得分：0分</th>
+	                		</tr>
+	                		<tr>
+	                    		<td width="15%">正确答案：</td>
+	                    		<td>错</td>
+	                    	</tr>
+	                    	<tr>
+	                    		<td>考生答案：</td>
+	                        	<td></td>
+	                    	</tr>
+	                	</table>
+	                </div>
+				</div>
+					            				<div class="box itembox paperexamcontent">
+					<h4 class="title">
+						第3题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1393');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<a name="question_1393">
+							<input id="time_1393" type="hidden" name="time[1393]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a>自己课题组的PCR仪坏了，搬一台重点室的回去用。					</div>
+											                					<div class="decidediv" style="border-left:10px solid #CCCCCC;position:relative;">
+	                	<div class="wrong"></div>	                	<table class="table table-hover table-bordered">
+            				<tr class="info">
+	                			<th colspan="2" style="border-top:0px;">本题得分：0分</th>
+	                		</tr>
+	                		<tr>
+	                    		<td width="15%">正确答案：</td>
+	                    		<td>错</td>
+	                    	</tr>
+	                    	<tr>
+	                    		<td>考生答案：</td>
+	                        	<td></td>
+	                    	</tr>
+	                	</table>
+	                </div>
+				</div>
+					            				<div class="box itembox paperexamcontent">
+					<h4 class="title">
+						第4题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1394');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<a name="question_1394">
+							<input id="time_1394" type="hidden" name="time[1394]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a>酶标仪读数中，闲的没事，上网玩会儿游戏。					</div>
+											                					<div class="decidediv" style="border-left:10px solid #CCCCCC;position:relative;">
+	                	<div class="wrong"></div>	                	<table class="table table-hover table-bordered">
+            				<tr class="info">
+	                			<th colspan="2" style="border-top:0px;">本题得分：0分</th>
+	                		</tr>
+	                		<tr>
+	                    		<td width="15%">正确答案：</td>
+	                    		<td>错</td>
+	                    	</tr>
+	                    	<tr>
+	                    		<td>考生答案：</td>
+	                        	<td></td>
+	                    	</tr>
+	                	</table>
+	                </div>
+				</div>
+					            				<div class="box itembox paperexamcontent">
+					<h4 class="title">
+						第5题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1395');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<a name="question_1395">
+							<input id="time_1395" type="hidden" name="time[1395]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a>不小心洒了LB到离心机中，赶紧联系仪器负责老师，承认错误，并清理干净。					</div>
+											                					<div class="decidediv" style="border-left:10px solid #CCCCCC;position:relative;">
+	                	<div class="wrong"></div>	                	<table class="table table-hover table-bordered">
+            				<tr class="info">
+	                			<th colspan="2" style="border-top:0px;">本题得分：0分</th>
+	                		</tr>
+	                		<tr>
+	                    		<td width="15%">正确答案：</td>
+	                    		<td>对</td>
+	                    	</tr>
+	                    	<tr>
+	                    		<td>考生答案：</td>
+	                        	<td></td>
+	                    	</tr>
+	                	</table>
+	                </div>
+				</div>
+																																																												<hr />
+				<div class="box itembox">
+					<blockquote class="questype">四、填空题</blockquote>
+				</div>
+					            	            				<div class="box itembox paperexamcontent">
+					<h4 class="title">
+						第1题
+						<span class="pull-right">
+							<a class="btn btn-primary qicon" onclick="javascript:favorquestion('1378');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+							<a name="question_1378">
+							<input id="time_1378" type="hidden" name="time[1378]"/>
+						</span>
+					</h4>
+					<div class="choice">
+						</a><p>重点室全名()</p>					</div>
+										<div class="decidediv" style="border-left:10px solid #CCCCCC;position:relative;">
+	                	<div class="wrong"></div>	                	<table class="table table-hover table-bordered">
+            				<tr class="info">
+	                			<th colspan="2" style="border-top:0px;">本题得分：0分</th>
+	                		</tr>
+	                		<tr>
+	                    		<td width="15%">正确答案：</td>
+	                    		<td><p>医学分子生物学国家重点实验室</p></td>
+	                    	</tr>
+	                    	<tr>
+	                    		<td>考生答案：</td>
+	                        	<td>111</td>
+	                    	</tr>
+	                	</table>
+	                </div>
+				</div>
+																																																			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

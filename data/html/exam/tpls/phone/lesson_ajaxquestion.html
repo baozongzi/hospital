@@ -1,0 +1,62 @@
+						<h4 class="title">
+				第4题
+				<span class="pull-right">
+					<a class="btn text-primary qicon" onclick="javascript:favorquestion('887');"><i class="glyphicon glyphicon-heart-empty"></i></a>
+					<a name="question_887"></a>
+					<input id="time_887" type="hidden" name="time[887]"/>
+				</span>
+			</h4>
+			<div class="choice">
+				<p>sa的撒大苏打撒</p>			</div>
+			<hr />
+            <div class="paperexamcontent_887 form-horizontal" style="padding:0rem 1.5rem;">
+				<div class="choice">
+					<a name="qrchild_887"></a>
+					<p>s阿达撒旦撒打算的</p>				</div>
+												<div class="choice" style="padding-bottom:0.5rem;">
+	            	<p>a撒旦撒打算打算</p>	            </div>
+	            	            <div class="selector questionanswerbox">
+		        			                		                		                <label class="radio-inline" style="line-height:2.8rem;"><input type="radio" name="question[887]" rel="887" value="A" />A </label>
+		                		                		                <label class="radio-inline" style="line-height:2.8rem;"><input type="radio" name="question[887]" rel="887" value="B" />B </label>
+		                		                		                <label class="radio-inline" style="line-height:2.8rem;"><input type="radio" name="question[887]" rel="887" value="C" />C </label>
+		                		                		                <label class="radio-inline" style="line-height:2.8rem;"><input type="radio" name="question[887]" rel="887" value="D" />D </label>
+		                		                		                		            		        </div>
+								<div class="choice" style="margin-top:20px;overflow:hidden;">
+					<div class="btn-group pull-right hide answerbox">
+		            				            		<a class="btn btn-primary ajax" action-pageant="pre" data-page="paper" data-target="lessonpaper-questionpanel" href="index.php?exam-phone-lesson-ajax-questions&number=3" title="上一题">上一题</a>
+		            				            				        	</div>
+		        	<div class="btn-group pull-right">
+		        		<a class="btn btn-primary questionbtn" href="javascript:;" onclick="javascript:$('.paperexamcontent_887').find('.questionbtn').addClass('hide');$('.paperexamcontent_887').find('.answerbox').removeClass('hide');" title="查看答案">查看答案</a>
+		        	</div>
+		    	</div>
+		    	<div id="rightanswer_887" class="hide">A</div>
+				<div class="answerbox hide" style="margin-top:20px;">
+					<table class="table table-hover table-bordered">
+	            		<tr class="info">
+	                		<td width="20%">答案</td>
+	                		<td>A</td>
+	                	</tr>
+	                	<tr>
+	                		<td>解析</td>
+	                		<td></td>
+	                	</tr>
+	            	</table>
+				</div>
+			</div>
+		</div>
+				<script type="text/javascript">
+			$("input:radio").click(function(){
+				var _this = $(this);
+				var qid = _this.attr('rel');
+				_this.parents('.selector').parent().find('.questionbtn').addClass('hide');
+				_this.parents('.selector').parent().find('.answerbox').removeClass('hide');
+				if(_this.val() == $("#rightanswer_"+qid).html())
+				{
+					_this.parents('.selector').addClass('alert-success').addClass('alert').html('恭喜您回答正确！');
+				}
+				else
+				{
+					_this.parents('.selector').addClass('alert-danger').addClass('alert').html('回答错误，正确答案为：'+$("#rightanswer_"+qid).html()+'，您选择的答案是：'+_this.val());
+				}
+			});
+		</script>

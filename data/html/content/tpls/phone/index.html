@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>模拟考试系统</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<script src="app/core/styles/js/fastclick.js"></script>
+<link rel="stylesheet" type="text/css" href="app/core/styles/css/swiper.min.css" />
+<link rel="stylesheet" type="text/css" href="app/core/styles/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="app/core/styles/css/mskin.css" />
+<script src="app/core/styles/js/jquery.min.js"></script>
+<script src="app/core/styles/js/swiper.jquery.js"></script>
+<script src="app/core/styles/js/jquery.json.js"></script>
+<script src="app/core/styles/js/jquery.mobile.custom.min.js"></script>
+<script src="app/core/styles/js/bootstrap.min.js"></script>
+<script src="app/core/styles/js/all.fine-uploader.min.js"></script>
+<script src="app/core/styles/js/mplugin.js"></script>
+<script src="app/exam/styles/js/mplugin.js"></script>
+</head>
+<body>
+<div id="content">
+    <div class="pages" id="page1">
+    	<header class="container-fluid" style="background-color:#337AB7;">
+			<h5 class="text-center">
+				<em style="font-size:2rem;" class="pull-left glyphicon glyphicon-home"></em>
+				<span class="ttlo">模拟考试系统</span>
+				<a style="font-size:2rem;color:#FFFFFF;" href="index.php?user-phone" class="pull-right glyphicon glyphicon-user ajax" data-target="user" data-page="user"></a>
+			</h5>
+		</header>
+    	<div class="container-fluid" style="overflow:hidden;margin-top:1rem;margin-bottom:0.4rem;">
+			<div class="swiper-container">
+	    		<div class="swiper-wrapper">
+		    				    		<div class="swiper-slide">
+		    			<a href="index.php?content-phone-content&contentid=55" class="ajax" data-page="rollpage" data-target="rollpage">
+		    				<img src="files/attach/images/content/20171208/15127209533800.jpg">
+		    			</a>
+		    		</div>
+		    				    		<div class="swiper-slide">
+		    			<a href="index.php?content-phone-content&contentid=54" class="ajax" data-page="rollpage" data-target="rollpage">
+		    				<img src="files/attach/images/content/20171206/15125225863737.jpg">
+		    			</a>
+		    		</div>
+		    			    		</div>
+	    		<div class="swiper-pagination"></div>
+	    	</div>
+		</div>
+		<div class="container-fluid">
+			<div style="clear:both;overflow:hidden;" class="items">
+				<div class="col-xs-6" style="padding:0.2rem;">
+					<div class="text-center" style="background:#712704;height:14rem;padding:0.2rem;">
+						<a href="index.php?exam-phone-index" class="ajax" data-page="exam" data-target="exam">
+							<h5>在线考试</h5>
+							<p style="font-size:1rem;">在线练习 模拟考试</p>
+							<p>
+								<img src="app/core/styles/img/item.png" style="width:6rem;"/>
+							</p>
+						</a>
+					</div>
+				</div>
+				<!--
+				<div class="col-xs-4" style="padding:0.2rem;">
+					<div class="text-center" style="background:#04477C;height:14rem;padding:0.2rem;">
+						<a class="ajax" href="index.php?course-phone-index" data-target="course" data-page="course">
+							<h5>视频课程</h5>
+							<p style="font-size:1rem;">课程课件 在线学习</p>
+							<p>
+								<img src="app/core/styles/img/item.png" style="width:6rem;"/>
+							</p>
+						</a>
+					</div>
+				</div>
+				-->
+				<div class="col-xs-6" style="padding:0.2rem;">
+					<div class="text-center" style="background:#036803;height:14rem;padding:0.2rem;">
+						<a href="index.php?content-phone-category" data-target="contentcategory" data-page="contentcategory" class="ajax">
+							<h5>考试资讯</h5>
+							<p style="font-size:1rem;">考试资讯 相关信息</p>
+							<p>
+								<img src="app/core/styles/img/item.png" style="width:6rem;"/>
+							</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<h4 style="overflow:hidden;clear:both;padding-top:0.2rem;">
+				<span class="pull-left" style="width:35%"><hr /></span>
+				<span class="col-xs-4 text-center" style="width:30%;line-height:4rem;">热门考场</span>
+				<span class="pull-right" style="width:35%"><hr /></span>
+			</h4>
+			<div style="clear:both;padding:1.5rem;background-color:#FFFFFF;margin-bottom:1rem;" class="col-xs-12">
+								<div class="media">
+					<a class="pull-left ajax" href="index.php?exam-phone-index-setCurrentBasic&basicid=40" data-target="basic" data-page="basic" style="width:8rem;">
+						<img src="app/core/styles/images/noimage.gif" style="width:8rem;" alt="教师测试考场">
+					</a>
+					<div class="media-body">
+						<h5 class="media-heading"><a href="index.php?exam-phone-index-setCurrentBasic&basicid=40" class="ajax" data-target="basic" data-page="basic">教师测试考场</a></h5>
+						<p style="font-size:1rem;"></p>
+					</div>
+				</div>
+								<div class="media">
+					<a class="pull-left ajax" href="index.php?exam-phone-index-setCurrentBasic&basicid=36" data-target="basic" data-page="basic" style="width:8rem;">
+						<img src="app/core/styles/images/noimage.gif" style="width:8rem;" alt="测试考试05.02">
+					</a>
+					<div class="media-body">
+						<h5 class="media-heading"><a href="index.php?exam-phone-index-setCurrentBasic&basicid=36" class="ajax" data-target="basic" data-page="basic">测试考试05.02</a></h5>
+						<p style="font-size:1rem;"></p>
+					</div>
+				</div>
+								<div class="media">
+					<a class="pull-left ajax" href="index.php?exam-phone-index-setCurrentBasic&basicid=37" data-target="basic" data-page="basic" style="width:8rem;">
+						<img src="app/core/styles/images/noimage.gif" style="width:8rem;" alt="测试2018.05.24 gc+wy">
+					</a>
+					<div class="media-body">
+						<h5 class="media-heading"><a href="index.php?exam-phone-index-setCurrentBasic&basicid=37" class="ajax" data-target="basic" data-page="basic">测试2018.05.24 gc+wy</a></h5>
+						<p style="font-size:1rem;"></p>
+					</div>
+				</div>
+								<div class="media">
+					<a class="pull-left ajax" href="index.php?exam-phone-index-setCurrentBasic&basicid=39" data-target="basic" data-page="basic" style="width:8rem;">
+						<img src="files/attach/images/content/20180605/15281627168464.png" style="width:8rem;" alt="考场测试1">
+					</a>
+					<div class="media-body">
+						<h5 class="media-heading"><a href="index.php?exam-phone-index-setCurrentBasic&basicid=39" class="ajax" data-target="basic" data-page="basic">考场测试1</a></h5>
+						<p style="font-size:1rem;">考场简介</p>
+					</div>
+				</div>
+								<div class="media">
+					<a class="pull-left ajax" href="index.php?exam-phone-index-setCurrentBasic&basicid=32" data-target="basic" data-page="basic" style="width:8rem;">
+						<img src="files/attach/images/content/20180427/15248168235976.jpg" style="width:8rem;" alt="生物化学与分子生物学基础原理考试">
+					</a>
+					<div class="media-body">
+						<h5 class="media-heading"><a href="index.php?exam-phone-index-setCurrentBasic&basicid=32" class="ajax" data-target="basic" data-page="basic">生物化学与分子生物学基础原理考试</a></h5>
+						<p style="font-size:1rem;"></p>
+					</div>
+				</div>
+								<div class="media">
+					<a class="pull-left ajax" href="index.php?exam-phone-index-setCurrentBasic&basicid=34" data-target="basic" data-page="basic" style="width:8rem;">
+						<img src="app/core/styles/images/noimage.gif" style="width:8rem;" alt="4.28测试">
+					</a>
+					<div class="media-body">
+						<h5 class="media-heading"><a href="index.php?exam-phone-index-setCurrentBasic&basicid=34" class="ajax" data-target="basic" data-page="basic">4.28测试</a></h5>
+						<p style="font-size:1rem;"></p>
+					</div>
+				</div>
+							</div>
+			<!--
+			<div>
+				<h4 style="overflow:hidden;clear:both;padding-top:0.2rem;">
+					<span class="pull-left" style="width:35%"><hr /></span>
+					<span class="col-xs-4 text-center" style="width:30%;line-height:4rem;">视频课程</span>
+					<span class="pull-right" style="width:35%"><hr /></span>
+				</h4>
+			</div>
+			<div style="clear:both;padding:1.5rem;background-color:#FFFFFF;margin-bottom:1rem;" class="col-xs-12">
+								<div class="media">
+					<a class="pull-left ajax" href="index.php?course-phone-course&csid=22" data-target="coursecontent" data-page="coursecontent" style="width:8rem;">
+						<img src="files/attach/images/content/20180702/15305121812158.jpg" style="width:8rem;" alt="生物化学">
+					</a>
+					<div class="media-body">
+						<h5 class="media-heading"><a class="ajax" href="index.php?course-phone-course&csid=22" data-target="coursecontent" data-page="coursecontent">生物化学</a></h5>
+						<p style="font-size:1rem;">&lt;p&gt;&amp;nbsp; 生物雪花&lt;/p&gt;
+
+&lt;p&gt;拒绝就拒绝&lt;/p&gt;... </p>
+					</div>
+				</div>
+								<div class="media">
+					<a class="pull-left ajax" href="index.php?course-phone-course&csid=13" data-target="coursecontent" data-page="coursecontent" style="width:8rem;">
+						<img src="files/attach/images/content/20180503/15253107211688.jpg" style="width:8rem;" alt="测试1">
+					</a>
+					<div class="media-body">
+						<h5 class="media-heading"><a class="ajax" href="index.php?course-phone-course&csid=13" data-target="coursecontent" data-page="coursecontent">测试1</a></h5>
+						<p style="font-size:1rem;">&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;简介回车&lt;br /&gt;
+&am... </p>
+					</div>
+				</div>
+								<div class="media">
+					<a class="pull-left ajax" href="index.php?course-phone-course&csid=3" data-target="coursecontent" data-page="coursecontent" style="width:8rem;">
+						<img src="files/attach/images/content/20171204/15123745149677.jpg" style="width:8rem;" alt="AKTA 相关知识点">
+					</a>
+					<div class="media-body">
+						<h5 class="media-heading"><a class="ajax" href="index.php?course-phone-course&csid=3" data-target="coursecontent" data-page="coursecontent">AKTA 相关知识点</a></h5>
+						<p style="font-size:1rem;">demo </p>
+					</div>
+				</div>
+								<div class="media">
+					<a class="pull-left ajax" href="index.php?course-phone-course&csid=2" data-target="coursecontent" data-page="coursecontent" style="width:8rem;">
+						<img src="files/attach/images/content/20180428/15249043503867.png" style="width:8rem;" alt="光学影像平台">
+					</a>
+					<div class="media-body">
+						<h5 class="media-heading"><a class="ajax" href="index.php?course-phone-course&csid=2" data-target="coursecontent" data-page="coursecontent">光学影像平台</a></h5>
+						<p style="font-size:1rem;"> </p>
+					</div>
+				</div>
+								<div class="media">
+					<a class="pull-left ajax" href="index.php?course-phone-course&csid=9" data-target="coursecontent" data-page="coursecontent" style="width:8rem;">
+						<img src="files/attach/images/content/20180428/15249041904593.png" style="width:8rem;" alt="生物化学与分子生物学基础原理">
+					</a>
+					<div class="media-body">
+						<h5 class="media-heading"><a class="ajax" href="index.php?course-phone-course&csid=9" data-target="coursecontent" data-page="coursecontent">生物化学与分子生物学基础原理</a></h5>
+						<p style="font-size:1rem;">添加                                             简介。 
+              处... </p>
+					</div>
+				</div>
+								<div class="media">
+					<a class="pull-left ajax" href="index.php?course-phone-course&csid=20" data-target="coursecontent" data-page="coursecontent" style="width:8rem;">
+						<img src="app/core/styles/images/noimage.gif" style="width:8rem;" alt="测试２">
+					</a>
+					<div class="media-body">
+						<h5 class="media-heading"><a class="ajax" href="index.php?course-phone-course&csid=20" data-target="coursecontent" data-page="coursecontent">测试２</a></h5>
+						<p style="font-size:1rem;"> </p>
+					</div>
+				</div>
+								<div class="media">
+					<a class="pull-left ajax" href="index.php?course-phone-course&csid=8" data-target="coursecontent" data-page="coursecontent" style="width:8rem;">
+						<img src="app/core/styles/images/noimage.gif" style="width:8rem;" alt="重点室LIMS账号使用规则及申请步骤">
+					</a>
+					<div class="media-body">
+						<h5 class="media-heading"><a class="ajax" href="index.php?course-phone-course&csid=8" data-target="coursecontent" data-page="coursecontent">重点室LIMS账号使用规则及申请步骤</a></h5>
+						<p style="font-size:1rem;">&lt;p&gt;　　重点室LIMS账号使用规则及申请步骤&lt;/p&gt; </p>
+					</div>
+				</div>
+							</div>
+			-->
+									<div>
+				<h4 style="overflow:hidden;clear:both;padding-top:0.2rem;">
+					<span class="pull-left" style="width:35%"><hr /></span>
+					<span class="col-xs-4 text-center" style="width:30%;line-height:4rem;"><a href="">学生咨询</a></span>
+					<span class="pull-right" style="width:35%"><hr /></span>
+				</h4>
+			</div>
+			<div style="clear:both;padding:1.5rem;background-color:#FFFFFF;margin-bottom:1rem;" class="col-xs-12">
+							</div>
+												<div>
+				<h4 style="overflow:hidden;clear:both;padding-top:0.2rem;">
+					<span class="pull-left" style="width:35%"><hr /></span>
+					<span class="col-xs-4 text-center" style="width:30%;line-height:4rem;"><a href="">帮助信息</a></span>
+					<span class="pull-right" style="width:35%"><hr /></span>
+				</h4>
+			</div>
+			<div style="clear:both;padding:1.5rem;background-color:#FFFFFF;margin-bottom:1rem;" class="col-xs-12">
+								<div class="media">
+					<a class="pull-left ajax" href="index.php?content-phone-content&contentid=53" data-target="contentpage" data-page="contentpage" style="width:8rem;">
+						<img src="files/attach/images/content/20161231/14831526066272.jpg" style="width:8rem;" alt="这是一篇测试性的文章">
+					</a>
+					<div class="media-body">
+						<h5 class="media-heading"><a class="ajax" href="index.php?content-phone-content&contentid=53" data-target="contentpage" data-page="contentpage">这是一篇测试性的文章</a></h5>
+						<p style="font-size:1rem;">这是一篇测试性的文章，我设置了头图和摘要 </p>
+					</div>
+				</div>
+							</div>
+												<div>
+				<h4 style="overflow:hidden;clear:both;padding-top:0.2rem;">
+					<span class="pull-left" style="width:35%"><hr /></span>
+					<span class="col-xs-4 text-center" style="width:30%;line-height:4rem;"><a href="">考试资料</a></span>
+					<span class="pull-right" style="width:35%"><hr /></span>
+				</h4>
+			</div>
+			<div style="clear:both;padding:1.5rem;background-color:#FFFFFF;margin-bottom:1rem;" class="col-xs-12">
+								<div class="media">
+					<a class="pull-left ajax" href="index.php?content-phone-content&contentid=59" data-target="contentpage" data-page="contentpage" style="width:8rem;">
+						<img src="app/core/styles/images/noimage.gif" style="width:8rem;" alt="蛋白纯化平台题库">
+					</a>
+					<div class="media-body">
+						<h5 class="media-heading"><a class="ajax" href="index.php?content-phone-content&contentid=59" data-target="contentpage" data-page="contentpage">蛋白纯化平台题库</a></h5>
+						<p style="font-size:1rem;"> </p>
+					</div>
+				</div>
+								<div class="media">
+					<a class="pull-left ajax" href="index.php?content-phone-content&contentid=58" data-target="contentpage" data-page="contentpage" style="width:8rem;">
+						<img src="app/core/styles/images/noimage.gif" style="width:8rem;" alt="光学影像平台题库">
+					</a>
+					<div class="media-body">
+						<h5 class="media-heading"><a class="ajax" href="index.php?content-phone-content&contentid=58" data-target="contentpage" data-page="contentpage">光学影像平台题库</a></h5>
+						<p style="font-size:1rem;"> </p>
+					</div>
+				</div>
+								<div class="media">
+					<a class="pull-left ajax" href="index.php?content-phone-content&contentid=57" data-target="contentpage" data-page="contentpage" style="width:8rem;">
+						<img src="files/attach/images/content/20180428/15249030303684.png" style="width:8rem;" alt="如何设计logo">
+					</a>
+					<div class="media-body">
+						<h5 class="media-heading"><a class="ajax" href="index.php?content-phone-content&contentid=57" data-target="contentpage" data-page="contentpage">如何设计logo</a></h5>
+						<p style="font-size:1rem;">这里是摘要。 </p>
+					</div>
+				</div>
+							</div>
+																		<div>
+				<h4 style="overflow:hidden;clear:both;padding-top:0.2rem;">
+					<span class="pull-left" style="width:35%"><hr /></span>
+					<span class="col-xs-4 text-center" style="width:30%;line-height:4rem;"><a href="">考试信息</a></span>
+					<span class="pull-right" style="width:35%"><hr /></span>
+				</h4>
+			</div>
+			<div style="clear:both;padding:1.5rem;background-color:#FFFFFF;margin-bottom:1rem;" class="col-xs-12">
+								<div class="media">
+					<a class="pull-left ajax" href="index.php?content-phone-content&contentid=60" data-target="contentpage" data-page="contentpage" style="width:8rem;">
+						<img src="files/attach/images/content/20180428/15249036098687.jpg" style="width:8rem;" alt="考试信息栏目文章">
+					</a>
+					<div class="media-body">
+						<h5 class="media-heading"><a class="ajax" href="index.php?content-phone-content&contentid=60" data-target="contentpage" data-page="contentpage">考试信息栏目文章</a></h5>
+						<p style="font-size:1rem;"> </p>
+					</div>
+				</div>
+							</div>
+								</div>
+		<script>
+			new Swiper('.swiper-container',{
+				"pagination":".swiper-pagination",
+				"loop":true,
+				"autoplay": 3000,
+			});
+		</script>
+		
+    </div>
+</div>
+</body>
+</html>
